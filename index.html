@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input id="goodMorning">
+    </div>
+    <script>
+        let sample = document.getElementById("goodMorning");
+        sample.value = "おはようございます。";
+        console.log("こんにちは");
+
+        let computer = {};
+        computer = {
+            hp: "pavilion",
+            dell: {
+                class1: "inspiron14",
+                class2: "inspiron15"
+            },
+            apple: {
+                os: {
+                    bigSur: {
+                        version1: "1.0.0"
+                    },
+                    catalina: {
+                        version1: "2.0.0",
+                        version2: "2.0.1"
+                    }
+                }   
+            },
+            microsoft: {
+                pc: ["surface", "surfacePro", "surfaceLaptop", ["colors", { first: "red", second: "blue"}]]
+            },
+        };
+
+        // 例：hpの値を取得してください。
+        console.log(computer.hp);
+
+        // ①dellのclass1の値を取得してください。
+        console.log();
+
+        // ②appleのcatalinaのversion2の値を取得してください
+        console.log();
+
+        // ③microsoftのpcのsecondの値を取得してください。
+        console.log();
+    </script>
+</body>
+</html>
